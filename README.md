@@ -11,5 +11,5 @@ Requirements:
 - Allows you to play without the portraits added by the main mod
 
 - If you want to play with anime portraits, select
-  - Avatar - Anime Portraits
+  - Avatar - Disabled Portraits
   - Anime Portraits: https://steamcommunity.com/sharedfiles/filedetails/?id=756755380
