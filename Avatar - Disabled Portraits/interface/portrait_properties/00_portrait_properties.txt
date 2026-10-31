@@ -1290,6 +1290,10 @@
 	# Imperial crown/Caliph turban
 	0 = {
 		factor = 100
+		modifier = {
+			factor = 0
+			culture_group = air_nomad_cultures
+		}
 		hide_layers = { 31 = { } } #Prevent hedge-incompatibilities with Ducal French Overlayers.
 		hide_layers = { 32 = { } } #Prevent hedge-incompatibilities with Ducal French Overlayers.
 		modifier = {
@@ -1430,6 +1434,10 @@
 	# Royal crown/turban 1
 	1 = {
 		factor = 1
+		modifier = {
+			factor = 0
+			culture_group = air_nomad_cultures
+		}
 		hide_layers = { 31 = { } } #Prevent hedge-incompatibilities with Ducal French Overlayers.
 		hide_layers = { 32 = { } } #Prevent hedge-incompatibilities with Ducal French Overlayers.
 		modifier = {
@@ -1567,6 +1575,10 @@
 	# Royal crown/turban 2
 	2 = {
 		factor = 1
+		modifier = {
+			factor = 0
+			culture_group = air_nomad_cultures
+		}
 		hide_layers = { 31 = { } } #Prevent hedge-incompatibilities with Ducal French Overlayers.
 		hide_layers = { 32 = { } } #Prevent hedge-incompatibilities with Ducal French Overlayers.
 		modifier = {
@@ -1704,6 +1716,10 @@
 	# Royal crown/turban 3
 	3 = {
 		factor = 1
+		modifier = {
+			factor = 0
+			culture_group = air_nomad_cultures
+		}
 		hide_layers = { 31 = { } } #Prevent hedge-incompatibilities with Ducal French Overlayers.
 		hide_layers = { 32 = { } } #Prevent hedge-incompatibilities with Ducal French Overlayers.
 		modifier = {
@@ -1848,6 +1864,10 @@
 	# Simple golden band/turban
 	4 = {
 		factor = 1
+		modifier = {
+			factor = 0
+			culture_group = air_nomad_cultures
+		}
 		modifier = {
 			factor = 0
 			trait = saint 
@@ -2423,6 +2443,7 @@
 		}
 		modifier = {
 			factor = 0
+			NOT = { culture_group = air_nomad_cultures } # Air Nomad rulers may remain bareheaded
 			NOT = { trait = saint }
 			NOT = { is_republic = yes }
 			NOT = { government = order_government }
@@ -5134,40 +5155,209 @@
 
 #p28 Tattoos
 28 = {
-	0 = {
+	0 = { # blank
 		factor = 100
-		modifier = { # Air nomad tattoos
+		modifier = {
 			factor = 0
+			OR = {
+				trait = african_tattoo_1
+				trait = african_tattoo_2
+				trait = african_tattoo_3
+				trait = african_tattoo_4
+				trait = african_tattoo_5
+				trait = african_tattoo_6
+				trait = african_tattoo_7
+				trait = african_tattoo_8
+				trait = african_tattoo_9
+				trait = african_tattoo_10
+				trait = african_tattoo_11
+				trait = african_tattoo_12
 
-			trait = airnomad_tattoos
-		}
-		modifier = { # Air nomad tattoos
-			factor = 0
-			
-			has_game_started = no
-			culture_group = air_nomad_cultures
-			age = 45
-		}
-		modifier = { # Air nomad tattoos
-			factor = 0
-			
-			has_game_started = no
-			culture_group = air_nomad_cultures
-			age = 40
-			is_ruler = yes
-		}
-		modifier = { # Air nomad tattoos
-			factor = 0
+				trait = norse_tattoo_1
+				trait = norse_tattoo_2
+				trait = norse_tattoo_3
+				trait = norse_tattoo_4
+				trait = norse_tattoo_5
+				trait = norse_tattoo_6
 
-			is_alive = no
-			
-			culture_group = air_nomad_cultures
-			is_exceptional_bender_trigger = yes
+				trait = slavic_tattoo_1
+				trait = slavic_tattoo_2
+				trait = slavic_tattoo_3
+				trait = slavic_tattoo_4
+				trait = slavic_tattoo_5
+				trait = slavic_tattoo_6
+			}
 		}
-	}
-	1 = {
-		factor = 1
-	}
+ 	}
+
+	1 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = african_tattoo_1 }
+		}
+  	}
+	2 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = african_tattoo_2 }
+		}
+  	}
+	3 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = african_tattoo_3 }
+		}
+  	}
+	4 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = african_tattoo_4 }
+		}
+  	}
+	5 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = african_tattoo_5 }
+		}
+  	}
+	6 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = african_tattoo_6 }
+		}
+  	}
+	7 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = african_tattoo_7 }
+		}
+  	}
+	8 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = african_tattoo_8 }
+		}
+  	}
+	9 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = norse_tattoo_1 }
+		}
+  	}
+	10 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = norse_tattoo_2 }
+		}
+  	}
+	11 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = norse_tattoo_3 }
+		}
+  	}
+	12 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = norse_tattoo_4 }
+		}
+  	}
+	13 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = norse_tattoo_5 }
+		}
+  	}
+	14 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = norse_tattoo_6 }
+		}
+  	}
+	15 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = slavic_tattoo_1 }
+		}
+  	}
+	16 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = slavic_tattoo_2 }
+		}
+  	}
+	17 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = slavic_tattoo_3 }
+		}
+  	}
+	18 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = slavic_tattoo_4 }
+		}
+  	}
+	19 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = slavic_tattoo_5 }
+		}
+  	}
+	20 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = slavic_tattoo_6 }
+		}
+  	}
+	21 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = african_tattoo_9 }
+		}
+  	}
+	22 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = african_tattoo_10 }
+		}
+  	}
+	23 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = african_tattoo_11 }
+		}
+  	}
+	24 = { 
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { trait = african_tattoo_12 }
+		}
+  	}
 }
 
 #p29 Warpaint
