@@ -1,0 +1,13 @@
+# Four Nations Restored supplies gfx/characters/shared/backgrounds.dds
+# at 3344x152: 22 frames, each 152x152.
+# Anime Portraits instead declares 25 frames for the same shared sprite.
+# Without this correction, CK2 divides the 22-frame texture incorrectly.
+spriteTypes = {
+    spriteType = {
+        name = "GFX_character_background"
+        texturefile = "gfx\\characters\\shared\\backgrounds.dds"
+        noOfFrames = 22
+        norefcount = yes
+        can_be_lowres = yes
+    }
+}
